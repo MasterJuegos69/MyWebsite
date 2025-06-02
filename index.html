@@ -90,22 +90,26 @@
         <br><br>
         <article>
             <h2>Formulario de contácto</h2>
-            <p>Con este formulario podrá contactarme vía correo electrónico al ingresar su información en los campos de abajo.</p>
+            <p>Con este formulario podrá generar una petición de contacto vía correo electrónico al ingresar su información en los campos de abajo.</p>
             <form>
-                <label for = "personName">Su nombre</label>
-                <input id = "personName" type = "text" name = "personName" placeholder = "Juan">
-                <br>
-                <label for = "subject">Describa su motivo de contacto</label>
-                <input id = "subject" type = "text" name = "subject" placeholder = "Oportunidad laboral">
-                <br>
-                <label for = "emailAddress">Su dirección de correo electrónico</label>
-                <input id = "emailAddress" type = "email" name = "emailAddress" placeholder = "ejemplo@gmail.com">
-                <br>
-                <input type="submit" value="Enviar">
+                <fieldset>
+                    <legend>Contáctame</legend>
+                    <label for = "personName">Su nombre</label>
+                    <input id = "personName" type = "text" name = "personName" placeholder = "Juan" required>
+                    <br>
+                    <label for = "subject">Describa su motivo de contacto</label>
+                    <input id = "subject" type = "text" name = "subject" placeholder = "Oportunidad laboral" required>
+                    <br>
+                    <label for = "emailAddress">Su dirección de correo electrónico</label>
+                    <input id = "emailAddress" type = "email" name = "emailAddress" placeholder = "ejemplo@gmail.com" required>
+                    <br>
+                    <input type="submit" value="Enviar" onclick = "successMessage()">
+                </fieldset>
             </form>
         </article>
     </main>
-    <!--<footer> 
-    </footer>-->    
+    <!--<footer>
+    </footer>-->
+    <script src="app.js"></script>
 </body>
 </html>
