@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Diaz | Un poco acerca de mí</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header><!--Introductory content-->
-        <h1>Hoja de vida</h1><!--Page title-->
-        <div role="status" aria-live="polite"><!--Last updated date-->
-            <p>
+        <div><!--Last updated date-->
+            <h1>Hoja de vida</h1><!--Page title-->
+            <p role="status" aria-live="polite">
                 <strong>Última actualización:</strong>
                 <time datetime="2025-06-02">2 de Junio de 2025</time>
             </p>
@@ -18,7 +19,7 @@
         <img src = "profile_picture.jpg" alt = "Foto de David Diaz"><!--Profile picture-->
     </header>
     <main><!--Dominant content-->
-        <section><!--Links related to my work-->
+        <section id="contactInformation"><!--Links related to my work-->
             <h2>Enlaces a mis redes de contacto</h2>
             <address>
                 <a href = "https://github.com/MasterJuegos69">GitHub</a> |
@@ -59,7 +60,7 @@
                 <li>Descansar</li>
             </ol>
         </section>
-        <section>
+        <section id="mySchedule">
             <h2>Mi horario</h2>
             <table>
                 <caption>Organización para la semana del 1 al 7 de mayo de 2025</caption>
@@ -87,7 +88,7 @@
                 </tbody>
             </table>
         </section>
-        <br><br>
+        <br>
         <article>
             <h2>Formulario de contácto</h2>
             <p>Con este formulario podrá generar una petición de contacto vía correo electrónico al ingresar su información en los campos de abajo.</p>
